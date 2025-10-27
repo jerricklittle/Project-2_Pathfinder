@@ -18,7 +18,7 @@
 
 ## Empirical Analysis
 
-PORTLAND TO MEDFORD
+1. PORTLAND TO MEDFORD
 
 Select pathfinding algorithm:
 1. Dijkstra's Algorithm
@@ -72,7 +72,7 @@ Edges evaluated: 18
 Execution time: 0.001 seconds
 
 
-PORTLAND TO ASHLAND:
+2. PORTLAND TO ASHLAND:
 
 Select pathfinding algorithm:
 1. Dijkstra's Algorithm
@@ -125,7 +125,7 @@ Vertices explored: 10
 Edges evaluated: 30
 Execution time: 0.001 seconds
 
-PORTLAND TO EUGENE
+3. PORTLAND TO EUGENE
 
 Select pathfinding algorithm:
 1. Dijkstra's Algorithm
@@ -184,15 +184,15 @@ REFLECTION:
 - All three algorithms found the optimal path for Portland to Eugene. Dijkstra found the optimal path for Portland to Ashland. Finally, Dijkstra and A star found the optimal path for Portland to Medford.
 - On average, Dijkstra performed best in regards to finding optimal paths. In the case of Portland to Eugene, all three algorithms performed similarly, getting the same optimal path. 
 Vertices Explored:
-Portland to Medford
+1. Portland to Medford
 - GBFS: 6
 - Dijkstra: 48
 - A*: 6
-Portland to Ashland: 
+2. Portland to Ashland: 
 - GBFS: 7
 - Dijkstra: 20
 - A*: 10
-Portland to Eugene:
+3. Portland to Eugene:
 - GBFS: 6
 - Dijkstra: 3
 - A*: 6
