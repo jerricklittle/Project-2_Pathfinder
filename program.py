@@ -80,8 +80,8 @@ def main() -> None:
             print("Invalid choice. Please enter 1, 2, or 3.")
             continue
 
-        start_city = input("\nEnter start city: ").strip().lower()
-        dest_city = input("Enter destination city: ").strip().lower()
+        start_city = input("\nEnter start city: ").strip()
+        dest_city = input("Enter destination city: ").strip()
 
         print(f"\nRunning {algo_names[choice]}...\n")
         algorithm: IAlgorithm = algorithms[choice]

@@ -1,7 +1,7 @@
 # Project-2_Pathfinder
-# Pathfinding Algorithm Implementation (Greedy BFS, Dijkstra, A*)
-# Names: Jerrick Little and Aj Tennathur
-# Course: CS 351 Analysis of Algorithms
+## Pathfinding Algorithm Implementation (Greedy BFS, Dijkstra, A*)
+## Names: Jerrick Little and Aj Tennathur
+## Course: CS 351 Analysis of Algorithms
 
 
 ## How to Compile/Run the Program
@@ -17,6 +17,186 @@
 
 
 ## Empirical Analysis
+
+PORTLAND TO MEDFORD
+
+Select pathfinding algorithm:
+1. Dijkstra's Algorithm
+2. Greedy Best-First Search
+3. A* Algorithm
+Enter choice (1-3): 2
+
+Enter start city: Portland
+Enter destination city: Medford
+
+Running Greedy Best-First Search...
+
+Path found: Portland → Newport → Florence → Coos_Bay → Roseburg → Medford
+Total distance: 397.0 miles
+Vertices explored: 6
+Edges evaluated: 15
+Execution time: 0.002 seconds
+
+Select pathfinding algorithm:
+1. Dijkstra's Algorithm
+2. Greedy Best-First Search
+3. A* Algorithm
+Enter choice (1-3): 1
+
+Enter start city: Portland
+Enter destination city: Medford
+
+Running Dijkstra's Algorithm...
+
+Path found: Portland → Salem → Eugene → Roseburg → Medford
+Total distance: 268.0 miles
+Vertices explored: 19
+Edges evaluated: 48
+Execution time: 0.001 seconds
+
+Select pathfinding algorithm:
+1. Dijkstra's Algorithm
+2. Greedy Best-First Search
+3. A* Algorithm
+Enter choice (1-3): 3
+
+Enter start city: Portland
+Enter destination city: Medford
+
+Running A* Algorithm...
+
+Path found: Portland → Salem → Eugene → Roseburg → Medford
+Total distance: 268.0 miles
+Vertices explored: 6
+Edges evaluated: 18
+Execution time: 0.001 seconds
+
+
+PORTLAND TO ASHLAND:
+
+Select pathfinding algorithm:
+1. Dijkstra's Algorithm
+2. Greedy Best-First Search
+3. A* Algorithm
+Enter choice (1-3): 2
+
+Enter start city: Portland
+Enter destination city: Ashland
+
+Running Greedy Best-First Search...
+
+Path found: Portland → Newport → Florence → Coos_Bay → Roseburg → Medford → Ashland
+Total distance: 412.0 miles
+Vertices explored: 7
+Edges evaluated: 18
+Execution time: 0.001 seconds
+
+Select pathfinding algorithm:
+1. Dijkstra's Algorithm
+2. Greedy Best-First Search
+3. A* Algorithm
+Enter choice (1-3): 1
+
+Enter start city: Portland
+Enter destination city: Ashland
+
+Running Dijkstra's Algorithm...
+
+Path found: Portland → Salem → Eugene → Roseburg → Medford → Ashland
+Total distance: 283.0 miles
+Vertices explored: 20
+Edges evaluated: 51
+Execution time: 0.001 seconds
+
+Select pathfinding algorithm:
+1. Dijkstra's Algorithm
+2. Greedy Best-First Search
+3. A* Algorithm
+Enter choice (1-3): 3
+
+Enter start city: Portland
+Enter destination city: Ashland
+
+Running A* Algorithm...
+
+Path found: Portland → Salem → Eugene → Crater_Lake → Medford → Ashland
+Total distance: 311.0 miles
+Vertices explored: 10
+Edges evaluated: 30
+Execution time: 0.001 seconds
+
+PORTLAND TO EUGENE
+
+Select pathfinding algorithm:
+1. Dijkstra's Algorithm
+2. Greedy Best-First Search
+3. A* Algorithm
+Enter choice (1-3): 1
+
+Enter start city: portland
+Enter destination city: Eugene
+
+Running Dijkstra's Algorithm...
+
+Path found: portland → salem → eugene
+Total distance: 111.0 miles
+Vertices explored: 6
+Edges evaluated: 11
+Execution time: 0.000 seconds
+
+
+Select pathfinding algorithm:
+1. Dijkstra's Algorithm
+2. Greedy Best-First Search
+3. A* Algorithm
+Enter choice (1-3): 2
+
+Enter start city: Portland
+Enter destination city: Eugene
+
+Running Greedy Best-First Search...
+
+Path found: Portland → Salem → Eugene
+Total distance: 111.0 miles
+Vertices explored: 3
+Edges evaluated: 7
+Execution time: 0.000 seconds
+
+
+Select pathfinding algorithm:
+1. Dijkstra's Algorithm
+2. Greedy Best-First Search
+3. A* Algorithm
+Enter choice (1-3): 3
+
+Enter start city: portland
+Enter destination city: eugene
+
+Running A* Algorithm...
+
+Path found: portland → salem → eugene
+Total distance: 111.0 miles
+Vertices explored: 6
+Edges evaluated: 11
+Execution time: 0.000 seconds
+
+REFLECTION:
+- All three algorithms found the optimal path for Portland to Eugene. Dijkstra found the optimal path for Portland to Ashland. Finally, Dijkstra and A star found the optimal path for Portland to Medford.
+- On average, Dijkstra performed best in regards to finding optimal paths. In the case of Portland to Eugene, all three algorithms performed similarly, getting the same optimal path. 
+Vertices Explored:
+Portland to Medford
+- GBFS: 6
+- Dijkstra: 48
+- A*: 6
+Portland to Ashland: 
+- GBFS: 7
+- Dijkstra: 20
+- A*: 10
+Portland to Eugene:
+- GBFS: 6
+- Dijkstra: 3
+- A*: 6
+
 
 ## Algorithm Use Case Analysis and Comparison
 

@@ -7,8 +7,38 @@ from queue import PriorityQueue
 from graph_impl import Vertex, Edge
 from itertools import count
 
+"""
+Tie-Breaker Implementation Explanation:
+
+I use a tie-breaker to avoid comparison errors in the PriorityQueue 
+when two vertices have the same priority (cost/heuristic). 
+It prevents the runtime error that happens when two vertices have
+the same priority and Python tries to compare the Vertex objects directly.
+
+The tie-breaker generates a unique integer for each queue entry
+using next(counter) from itertools.count(). It then includes it as 
+the second element in the tuple that is pushed to the queue.
+
+This makes sure that all queue items are always comparable, 
+even if their priorities are technically the same, and prevents 
+runtime errors, since the tie-breaker ensures a unique ordering. 
+"""
+
 class greedyBestFirstAlgorithm(IAlgorithm):
     def find_path(self, graph: IGraph, start_vertex_name: str, destination_vertex_name: str) -> AlgorithmResult:
+        """
+        Implements Greedy Best-First Search algorithm to find the shortest path
+        from start_vertex_name to destination_vertex_name in the given graph.
+        Uses a priority queue to explore vertices based on their heuristic
+        distance to the goal. 
+
+        Args: 
+            graph: The graph to search.
+            start_vertex_name: The name of the starting vertex.
+            destination_vertex_name: The name of the destination vertex.
+        Returns: 
+            AlgorithmResult containing path details and performance metrics.
+        """
         start_time = time.time()
         vertices_explored = 0
         edges_evaluated = 0
@@ -39,12 +69,12 @@ class greedyBestFirstAlgorithm(IAlgorithm):
                 continue
             vertices_explored += 1
 
-            print(f"\nCurrent: {current.get_name()}")
+            """print(f"\nCurrent: {current.get_name()}")
             print("Neighbor distances to Medford:")
             for edge in current.get_edges():
                 neighbor = edge.get_destination()
                 h_dist = neighbor.straight_line_distance(goal)
-                print(f"  {neighbor.get_name()}: {h_dist:.2f} miles")
+                print(f"  {neighbor.get_name()}: {h_dist:.2f} miles")"""
 
             if current.get_name() == goal.get_name():
                 path = []
@@ -84,6 +114,14 @@ class greedyBestFirstAlgorithm(IAlgorithm):
         )
 
     def get_name(self) -> str:
+        """
+        Returns the name of the algorithm.
+        
+        Args:
+            None
+        Returns:
+            The name of the algorithm.
+        """
         return "Greedy Best-First Search Algorithm"
 
 class AStarAlgorithm(IAlgorithm):
