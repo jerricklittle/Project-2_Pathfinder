@@ -10,7 +10,7 @@
 1. Ensure all project files are in the same directory: 
 - `program.py` (main entry point) 
 - `algorithms.py` (pathfinding algorithms) 
-- `graph.txt` (cities with distances)
+- `graph_v2.txt` (cities with distances and directional highways)
 - `graph_interfaces.py` (interface definitions for graph components)
 - `vertices_v1.txt` (cities with lat and long values)
 - `graph_impl.py` (Graph, Vertex, and Edge class implementations)
